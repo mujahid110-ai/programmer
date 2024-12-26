@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+h3.total-lectures {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.attendance-table th,
+.attendance-table td {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #2c3e50;
+    border: 1px solid #ecf0f1;
+}
+
+.attendance-table th {
+    background-color: #2980b9;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+.attendance-table tr:hover {
+    background-color: #dfe6e9;
+    transition: background-color 0.3s ease;
+}
+
+.attendance-table .percentage {
+    font-size: 20px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.attendance-table .percentage span {
+    display: block;
+    font-size: 16px;
+    color: #7f8c8d;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* VIP Styling for Table */
+.attendance-table th, .attendance-table td {
+    border-color: #3498db;
+}
+
+.attendance-table tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .total-lectures {
+        font-size: 20px;
+    }
+
+    .attendance-table th,
+    .attendance-table td {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .total-lectures {
+        font-size: 18px;
+    }
+
+    .attendance-table th,
+    .attendance-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Scrollable Table for Smaller Screens */
+@media (max-width: 600px) {
+    .attendance-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
